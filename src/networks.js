@@ -3,7 +3,7 @@
  *
  * Properties:
  * @u = url
- * @t = title
+ * @t = shareTitle
  * @d = description
  * @q = quote
  * @h = hashtags

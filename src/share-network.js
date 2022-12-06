@@ -30,7 +30,7 @@ export default {
     /**
      * Title of the content to share.
      */
-    title: {
+    shareTitle: {
       type: String,
       required: true
     },
@@ -162,7 +162,7 @@ export default {
       return link
         .replace(/@tu/g, '&via=' + encodeURIComponent(this.twitterUser))
         .replace(/@u/g, encodeURIComponent(this.url))
-        .replace(/@t/g, encodeURIComponent(this.title))
+        .replace(/@t/g, encodeURIComponent(this.shareTitle))
         .replace(/@d/g, encodeURIComponent(this.description))
         .replace(/@q/g, encodeURIComponent(this.quote))
         .replace(/@h/g, this.encodedHashtags)

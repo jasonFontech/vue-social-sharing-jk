@@ -3,7 +3,7 @@ import { Plugin } from "vue"
 export interface Props {
   network: string
   url: string
-  title: string
+  shareTitle: string
   description?: string
   quote?: string
   hashtags?: string

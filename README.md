@@ -72,7 +72,7 @@ modules: [
 <ShareNetwork
     network="facebook"
     url="https://news.vuejs.org/issues/180"
-    title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
+    share-title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
     description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
     quote="The hot reload is so fast it\'s near instant. - Evan You"
     hashtags="vuejs,vite"
@@ -98,7 +98,7 @@ The `url` is the only property required for all networks.
 | Prop           | Type   | Description                                                |
 |----------------|--------|------------------------------------------------------------|
 | `url`          | String | URL to share.                                              |
-| `title`        | String | Sharing title (if available).                              |
+| `shareTitle`        | String | Sharing title (if available).                              |
 | `description`  | String | Sharing description (if available).                        |
 | `quote`        | String | Facebook quote (Facebook only).                            |
 | `hashtags`     | String | A list of comma-separated hashtags (Twitter and Facebook). |
@@ -182,7 +182,7 @@ import VueSocialSharing from '@/vue-social-sharing'
 
 Vue.use(VueSocialSharing, {
   networks: {
-    fakeblock: 'https://fakeblock.com/share?url=@url&title=@title'
+    fakeblock: 'https://fakeblock.com/share?url=@url&title=@shareTitle'
   }
 })
 
@@ -198,7 +198,7 @@ You can extend the list of available networks directly in your `nuxt.config.js` 
 modules: [
   ['vue-social-sharing/nuxt', {
     networks: {
-      fakeblock: 'https://fakeblock.com/share?url=@url&title=@title'
+      fakeblock: 'https://fakeblock.com/share?url=@url&title=@shareTitle'
     }
   }],
 ]
